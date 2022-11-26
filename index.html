@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container-img-1">
+        <img src="./bg-main-desktop.png" alt="">
+        <div class="cards-container">
+          <div class="front-card">
+            <img class="front-card-header" src="./card-logo.svg" alt="">
+            <img src="./bg-card-front.png" alt="">
+            <p class="front-card-number">0000 0000 0000 0000</p>
+            <div class="card-name-card-number">
+              <p class="card-name">Saurabh Desale</p>
+              <p class="card-date-img"><span class="month">06/</span><span class="year">23</span></p>
+            </div>
+            
+          </div>
+          <div class="back-card">
+            <img src="./bg-card-back.png" alt="">
+            <p class="back-card-cvc">008</p>
+        </div>
+       
+      </div>
+    </div>
+    <div class="input-details-container">
+      <form onsubmit="return false">
+        <label class="form-label" for="cardHolderName">Cardholder Name</label>
+        <br>
+        <input class="form-text" type="text" name="cardHolderName" placeholder="eg.Sammy Jon" required id="input-card-name">
+        <p class="error-text for-name">Wrong format</p>
+        <label class="form-label" for="cardHolderCardNumber">Card Number</label>
+        <br>
+        <input class="form-text" type="number" name="cardHolderCardNumber" maxlength="16" required placeholder="e.g.1234567890122345" id="input-card-number"   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <p class="error-text for-number">Wrong format</p>
+        <div class="card-month">
+          <label class="form-label" for="cardDate">Exp. Date (MM/YY)</label><br>
+          <input class="form-text  card-date " type="number" name="cardDate" placeholder="MM" required id="input-card-date-month">
+          <input class="form-text  card-date" type="number" name="cardDate" placeholder="YY" required id="input-card-date-year">
+          <p class="error-text for-date">Wrong format</p>
+        </div>
+        <div class="card-cvv">
+          <label class="form-label cvc-text" for="cardCvc">CVC</label><br>
+          <input class="form-text  card-cvc" type="number" name="cardCvc"  placeholder="e.g.121" required id="input-card-cvc">
+          <p class="error-text for-cvc">Wrong format</p>
+
+        </div>
+        <input class="btn" type="submit" value="Confirm">
+      </form>
+    </div> 
+    <div class="completed-details-container-main">
+      <div class="completed-details-container-sub">
+        <img class="completed-logo" src="./icon-complete.svg" alt="">
+        <div class="completed-text">
+          <p class="para-text-complete">THANK YOU!</p>
+          <p class="para-text-complete-two">We’ve added your card details</p>
+          <input class="btn-complete" type="submit" value="Continue">
+        </div>
+      </div>
+     
+    </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

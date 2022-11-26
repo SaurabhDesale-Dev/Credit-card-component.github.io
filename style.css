@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  width: 1440px;
+  height: 900px;
+  margin: 2% auto 0 auto;
+  position: relative;
+}
+.container-img-1 {
+  position: relative;
+}
+.cards-container {
+  width: 541px;
+  height: 527px;
+
+  position: absolute;
+  top: 187px;
+  left: 164px;
+}
+.back-card {
+  position: absolute;
+  left: 94px;
+  top: 282px;
+}
+.front-card-header {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+}
+.front-card-number {
+  height: 36px;
+  position: absolute;
+  top: 139px;
+  left: 32px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 3.42222px;
+  color: #ffffff;
+}
+.card-name-card-number {
+  position: absolute;
+  top: 200.5px;
+}
+.card-name {
+  display: inline-block;
+  margin-left: 32px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.card-date-img {
+  display: inline-block;
+  position: absolute;
+  left: 366px;
+
+  /* Body (L) */
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.back-card-cvc {
+  position: absolute;
+  bottom: 120px;
+  right: 57px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.input-details-container {
+  width: 381px;
+  height: 352px;
+  position: absolute;
+  left: 832px;
+  top: 275px;
+}
+.form-label {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092f;
+}
+.form-text {
+  background-color: #ffffff;
+  border: 1px solid #21092f;
+  border-radius: 8px;
+  width: 381px;
+  height: 45px;
+  margin-top: 10px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #21092f;
+  opacity: 0.25;
+  /* margin-bottom: 26px; */
+}
+.card-month {
+  display: inline-block;
+}
+.card-cvv {
+  display: inline-block;
+}
+
+.card-date {
+  width: 80px;
+  height: 40px;
+}
+.cvc-text {
+  position: absolute;
+  right: 155px;
+  bottom: 155px;
+}
+.card-cvc {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  left: 20px;
+}
+.btn {
+  width: 381px;
+  height: 53px;
+  background: #21092f;
+  border-radius: 8px;
+  color: #fff;
+  position: relative;
+  top: 20px;
+}
+.error-text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  /* Red */
+
+  color: #70070c;
+  visibility: hidden;
+  margin-top: 3px;
+}
+.completed-details-container-main {
+  width: 381px;
+  height: 352px;
+  position: absolute;
+  left: 832px;
+  top: 305px;
+  text-align: center;
+  visibility: hidden;
+}
+.completed-details-container-sub {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.completed-logo {
+  position: relative;
+}
+.completed-text {
+  width: 100%;
+  position: absolute;
+  top: 115px;
+}
+.para-text-complete {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 3.42222px;
+
+  /* Deep Violet */
+
+  color: #21092f;
+}
+.para-text-complete-two {
+  position: relative;
+  top: 16px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: center;
+}
+.btn-complete {
+  width: 381px;
+  height: 53px;
+  background: #21092f;
+  border-radius: 8px;
+  color: #fff;
+  position: relative;
+  top: 48px;
+}
